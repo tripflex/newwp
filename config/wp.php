@@ -6,7 +6,7 @@
  * @copyright  Copyright (c) Myles McNamara 2013-2014
  * @Date:   2014-03-19 21:40:57
  * @Last Modified by:   Myles McNamara
- * @Last Modified time: 2014-03-19 22:19:46
+ * @Last Modified time: 2014-03-19 22:34:08
  */
 
 define('APP_ROOT', dirname(__DIR__));
@@ -17,7 +17,7 @@ $liveConfig = APP_ROOT . '/config/env/live.php';
 
 if (file_exists($devConfig)) {
 	require $devConfig;
-} elseif{
+} else {
 	require $liveConfig;
 }
 
